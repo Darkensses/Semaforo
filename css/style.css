@@ -44,50 +44,84 @@ GLOBAL
 	border:2px solid black;
 	background: rgb(255,230,0);
 	padding: 30px 37px;
-	z-index: 2;
+	z-index: 7;
 }
 
 #sombra{
 	position: absolute;
-	margin: 160px 610px;
-	width: 180px;
+	margin: 160px 550px;
+	width: 300px;
 	height: 380px;
 	border:2px solid black;
-	/*background: black;*/
+	background: rgba(255,0,0,1);
 	z-index: 3;
-	animation: movimiento 5s infinite;
+	animation: movimiento 10s infinite;
 }
 @keyframes movimiento{
 	0%{
-		margin-left: 610px;
+		margin-left: 550px;
 		background: rgba(255,0,0,1);
 	}
-	25%{
-		margin-left: 810px;
+	10%{
+		margin-left: 970px;
+		background: rgba(255,0,0,1);
+	}
+	19%{
+		z-index: 1;
+		margin-left: 550px;
+		background: rgba(255,0,0,1);
+	}
+	20%{
+		z-index: 1;
+		background: rgba(255,255,0,1);
+	}
+	30%{
+		z-index: 3;
+		margin-left: 130px;
+		background: rgba(255,255,0,1);
+	}
+	40%{
+		z-index: 3;
+		margin-left: 550px;
 		background: rgba(255,255,0,1);
 	}
 	50%{
-		z-index: 1;
-		margin-left: 610px;
+		margin-left: 970px;
 		background: rgba(255,255,0,1);
 	}
-	60%{
-		z-index: 1;
-		margin-left: 610px;
-		background: rgba(0,255,0,1);
-	}
-	85%{
-		z-index: 1;
-		margin-left: 390px;
-		background: rgba(0,255,0,1);
-	}
-	100%{
-		z-index: 3;
-		margin-left: 610px;
-		background: rgba(255,0,0,1);
-	}
 
 
+}
+
+#pestaña1{
+	position: absolute;
+	margin: 50px 550px;
+	width: 300px;
+	height: 100px;
+	border-top:2px solid black;
+	background: #FF8000;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	z-index: 5;
+}
+
+#margen1{
+	margin: 130px 460px;
+	position: absolute;
+	width: 100px;
+	height: 450px;
+	background: #FF8000;
+	border-left: 2px solid black;
+	z-index: 4;
+}
+#margen2{
+	margin: 130px 840px;
+	position: absolute;
+	width: 100px;
+	height: 450px;
+	background: #FF8000;
+	border-right: 2px solid black;
+	z-index:4;
 }
 
 #triangulo1{
@@ -95,36 +129,40 @@ GLOBAL
 	margin: 195px 540px;
     width: 0; 
     height: 0; 
-    border-left: 150px solid red;
+    border-left: 150px solid #FF8000;
     border-top: 0px solid transparent;
-    border-bottom: 85px solid transparent; 
+    border-bottom: 85px solid transparent;
+    z-index:4; 
 }
 #triangulo2{
 	position: absolute;
 	margin: 195px 536px;
     width: 0; 
     height: 0; 
-    border-left: 80px solid red;
+    border-left: 80px solid #FF8000;
     border-top: 0px solid transparent;
-    border-bottom: 150px solid transparent; 
+    border-bottom: 150px solid transparent;
+    z-index:4; 
 }
 #triangulo3{
 	position: absolute;
 	margin: 195px 710px;
     width: 0; 
     height: 0; 
-    border-right: 150px solid red;
+    border-right: 150px solid #FF8000;
     border-top: 0px solid transparent;
-    border-bottom: 85px solid transparent; 
+    border-bottom: 85px solid transparent;
+    z-index:4; 
 }
 #triangulo4{
 	position: absolute;
 	margin: 195px 780px;
     width: 0; 
     height: 0; 
-    border-right: 80px solid red;
+    border-right: 80px solid #FF8000;
     border-top: 0px solid transparent;
-    border-bottom: 150px solid transparent; 
+    border-bottom: 150px solid transparent;
+    z-index:4; 
 }
 #circuloCaja{
 	position: absolute;
@@ -133,42 +171,91 @@ GLOBAL
 	height: 300px;
 	border-radius: 100%;
 	border: 15px solid black;
+	z-index: 5;
+}
+#fondo{
+	position: absolute;
+	width: 480px;
+	height: 479px;
+	border:2px solid black;
+	background: #6E6E6E;
+	margin: 110px 460px;
+	z-index: 2;
 }
 #triangulo5{
 	position: absolute;
 	margin: 425px 544px;
     width: 0; 
     height: 0; 
-    border-left: 150px solid red;
+    border-left: 150px solid #FF8000;
     border-top: 85px solid transparent;
-    border-bottom: 0px solid transparent; 
+    border-bottom: 0px solid transparent;
+    z-index:4; 
 }
 #triangulo6{
 	position: absolute;
 	margin: 360px 540px;
     width: 0; 
     height: 0; 
-    border-left: 80px solid red;
+    border-left: 80px solid #FF8000;
     border-top: 150px solid transparent;
-    border-bottom: 0px solid transparent; 
+    border-bottom: 0px solid transparent;
+    z-index:4; 
 }
 #triangulo7{
 	position: absolute;
 	margin: 425px 705px;
     width: 0; 
     height: 0; 
-    border-right: 150px solid red;
+    border-right: 150px solid #FF8000;
     border-top: 85px solid transparent;
-    border-bottom: 0px solid transparent; 
+    border-bottom: 0px solid transparent;
+    z-index:4; 
 }
 #triangulo8{
 	position: absolute;
 	margin: 360px 780px;
     width: 0; 
     height: 0; 
-    border-right: 80px solid red;
+    border-right: 80px solid #FF8000;
     border-top: 150px solid transparent;
-    border-bottom: 0px solid transparent; 
+    border-bottom: 0px solid transparent;
+    z-index:4; 
+}
+#margen3{
+	margin: 110px 460px;
+	position: absolute;
+	width: 480px;
+	height: 100px;
+	background: #FF8000;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	z-index:4;
+}
+#margen4{
+	margin: 490px 460px;
+	position: absolute;
+	width: 480px;
+	height: 100px;
+	background: #FF8000;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	z-index:4;
+}
+
+#pestaña2{
+	position: absolute;
+	margin: 550px 550px;
+	width: 300px;
+	height: 100px;
+	border-bottom:2px solid black;
+	background: #FF8000;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+
+	z-index: 5;
 }
 
 /*=============================================
