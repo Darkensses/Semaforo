@@ -49,35 +49,45 @@ GLOBAL
 
 #sombra{
 	position: absolute;
-	margin: 150px 600px;
-	width: 200px;
-	height: 400px;
+	margin: 160px 610px;
+	width: 180px;
+	height: 380px;
 	border:2px solid black;
-	background: rgba(0,0,0,.6);
+	/*background: black;*/
 	z-index: 3;
 	animation: movimiento 5s infinite;
 }
 @keyframes movimiento{
-	0%{margin-left: 600px;}
+	0%{
+		margin-left: 610px;
+		background: rgba(255,0,0,1);
+	}
 	25%{
 		margin-left: 810px;
-		background: rgba(0,0,0,1);
+		background: rgba(255,255,0,1);
 	}
 	50%{
 		z-index: 1;
-		margin-left: 600px;
-		background: rgba(0,0,0,.6);
+		margin-left: 610px;
+		background: rgba(255,255,0,1);
 	}
-	75%{
+	60%{
+		z-index: 1;
+		margin-left: 610px;
+		background: rgba(0,255,0,1);
+	}
+	85%{
 		z-index: 1;
 		margin-left: 390px;
-		background: rgba(0,0,0,1);
+		background: rgba(0,255,0,1);
 	}
 	100%{
 		z-index: 3;
-		margin-left: 600px;
-		background: rgba(0,0,0,.6);
+		margin-left: 610px;
+		background: rgba(255,0,0,1);
 	}
+
+
 }
 
 #caja .rojo{
